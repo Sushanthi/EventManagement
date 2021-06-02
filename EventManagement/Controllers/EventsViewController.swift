@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class EventsViewController: UIViewController {
     var imgUrl: String = ""
     var events =  [EventInfo]()
@@ -85,6 +86,7 @@ class EventsViewController: UIViewController {
 
 }
 
+@available(iOS 13.0, *)
 extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -138,6 +140,7 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
 
 }
 
+@available(iOS 13.0, *)
 extension EventsViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredEvents = []

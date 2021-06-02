@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class EventDetailViewController: UIViewController {
     var eventDetails =  EventInfo()
     var formattedDate: String = ""
